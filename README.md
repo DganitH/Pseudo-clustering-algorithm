@@ -2,7 +2,7 @@
 
 The goal of this project is to design and implement a heuristic algorithm for the clustering problem in DNA storage under high error rate from Nanopore sequencing.
 My algorithm has two levels:
-1- Dividing according to the index.
+1- Division according to the index.
 2- Division by closeness to existing clusters according to a certain criterion
 For a more detailed explanation, see the file 'Pseudo-clustering algorithm- Final Project.pdf'.
 
