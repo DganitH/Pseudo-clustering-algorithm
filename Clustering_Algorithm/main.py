@@ -5,7 +5,7 @@ if __name__ == '__main__':
 
     """__________Preliminary work__________"""
 
-    indices = load_file("450indices.txt")
+    indices = load_file("data_files/450indices.txt")
     idx_len = len(indices[0])
     sub_idx_dict = create_sub_balls(indices)  # maps an index with at most one substitution error to the original index.
     del_idx_dict = create_del_balls(indices)  # maps an index with one deletion error to the original index.
@@ -13,9 +13,9 @@ if __name__ == '__main__':
 
     # correct_idx_to_strands - maps between the index of the original strand to the erroneous copies of this strand.
     # correct_strands_to_idx - maps between an erroneous strand to the index of the its' original strand.
-    correct_idx_to_strands, correct_strands_to_idx = load_correct_division("evyat.txt", idx_len)
+    correct_idx_to_strands, correct_strands_to_idx = load_correct_division("data_files/evyat.txt", idx_len)
 
-    strands_with_errors = load_file("errors_shuffled.txt")
+    strands_with_errors = load_file("data_files/errors_shuffled.txt")
 
     """__________First division into clusters__________"""
 
